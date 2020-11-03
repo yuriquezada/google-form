@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <h3>Departamento en el que labora la mayor parte del tiempo (puede marcar más de uno) <span style="color:red">*</span></h3>
+            <div>
+                <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Pre-triaje</label><br>
+                <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Triaje COVID-19</label><br>
+                <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Triaje NO COVID-19</label><br>
+                <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Emergencias COVID-19</label><br>
+                <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Emergencias NO COVID-19</label><br>
+                <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Hospitalización COVID-19</label><br>
+                <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Hospitalización NO COVID-19</label><br>
+                <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Sala de operaciones</label><br>
+                <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Telemedicina</label><br>
+                <input type="checkbox" name="otro"><label for="cbox2">Otro:</label>
+                <input type="text"><br>
+            </div>
+        </fieldset>
+        <fieldset>
+            <h3>¿Usted ha presentado alguno de los siguientes síntomas en los últimos 15 días? Puede marcar más de una alternativa. <span style="color:red">*</span></h3>
+            <div>
+                <input type="checkbox" name="tos">Tos<br>
+                <input type="checkbox" name="garganta">Dolor de garganta<br>
+                <input type="checkbox" name="fiebre">Fiebre<br>
+                <input type="checkbox" name="respiracion">Dificultad respiatoria<br>
+                <input type="checkbox" name="Anosmia">Anosmia/Hiposmia<br>
+                <input type="checkbox" name="Congestion">Congestion/Secreción nasal<br>
+                <input type="checkbox" name="cansancio">Cansancio/Fatiga<br>
+                <input type="checkbox" name="diarrea">Diarrea<br>
+                <input type="checkbox" name="mialgas">Mialgas<br>
+                <input type="checkbox" name="otro">Otro: <input type="text" />
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <h3>¿Ha sido diagnosticado con COVID-19? (Por prueba rápida o molecular) <span style="color: red">*</span>
+            </h3>
+            <div>
+                <input type="radio" name="labor" value="si">Sí<br /><br />
+                <input type="radio" name="labor" value="no">No<br /><br />
+            </div>
+        </fieldset>
+        <fieldset>
+            <h3>¿Ha percibido discriminación por ser personal de salud?<span style="color: red">*</span></h3>
+            <div>
+                <input type="radio" name="labor" value="si">Sí<br /><br />
+                <input type="radio" name="labor" value="no">No<br /><br />
+            </div>
+        </fieldset>
+        <fieldset>
+            <h3>¿Ha tomado distancia física de su familia para cuidarlos del COVID-19 <span style="color: red">*</span>
+            </h3>
+            <div>
+                <input type="radio" name="labor" value="si">Sí<br /><br />
+                <input type="radio" name="labor" value="no">No<br /><br />
+            </div>
+        </fieldset>
+        <fieldset>
+            <h3>¿Algún familiar ha fallecido por COVID-19?<span style="color: red">*</h3>
+            <div>
+                <input type="radio" name="labor" value="si">Sí<br /><br />
+                <input type="radio" name="labor" value="no">No<br /><br />
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
