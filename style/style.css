@@ -1,3 +1,28 @@
+.form{
+    margin: auto;
+    max-width: 90vw;
+    width: 640px;
+}
+
 .formView{
+    margin-top: 12px;
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    margin-bottom: 12px;
     padding: 24px;
+    padding-top: 22px;
+    position: relative;
+}
+
+.formViewPrincipal__solidBackground{
+    background-color: rgb(63, 81, 181);
+    color: rgba(255, 255, 255, 1);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 10px;
+    left: -1px;
+    position: absolute;
+    top: -1px;
+    width: calc(100% + 2px);
 }

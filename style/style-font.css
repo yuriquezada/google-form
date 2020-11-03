@@ -1,17 +1,22 @@
 body{
     font-family: 'Roboto', sans-serif;
-}
-
-h1, h3{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .2px;
+    line-height: 20px;
     color: #202124;
 }
+
 .formViewPrincipal__title{
     font-family: 'Product Sans Regular';
     font-weight: 300;
+    
 }
 
 .formViewSecondary__title{
     font-family: 'Product Sans Light Regular';
+    font-size: 16px;
+    margin: 2px 0 18px 0;
 }
 
 input{

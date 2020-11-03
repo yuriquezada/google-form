@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/style-google-font.css">
     <link rel="stylesheet" href="./style/style-font.css">
+    <link rel="stylesheet" href="./style/style-radiobutton.css">
 </head>
 
 <body>
@@ -16,33 +18,50 @@
         <fieldset class="formView formViewPrincipal">
             <div class="formViewPrincipal__solidBackground"></div>
             <h1 class="formViewPrincipal__title">Encuesta Salud Mental - PARTE 1</h1>
-            <p>A continuación usted responderá una serie de preguntas relacionadas a factores sociodemográficos, laborales y relacionados a la infección por COVID-19.</p>
+            <p>A continuación usted responderá una serie de preguntas relacionadas a factores sociodemográficos,
+                laborales y relacionados a la infección por COVID-19.</p>
         </fieldset>
         <fieldset class="formView formViewSecondary"">
             <h3 class="formViewSecondary__title">Género<span style="color: red">*</span></h3>
-            <div>
-                <input type="radio" name="labor" value="si">Sí<br /><br />
-                <input type="radio" name="labor" value="no">No<br /><br />
+            <div class="form-radio formViewSecondary__list">
+                <div class="radio form-radio formViewSecondary__item">
+                  <label class="formViewSecondary__label">
+                    <input class="formViewSecondary__input" type="radio" name="radio" id="r1" checked="checked"/><i class="helper formViewSecondary__i"></i>Sí
+                  </label>
+                </div>
+                <div class="radio form-radio formViewSecondary__item">
+                  <label class="formViewSecondary__label">
+                    <input class="formViewSecondary__input" type="radio" name="radio" id="r2"/><i class="helper formViewSecondary__i"></i>No
+                  </label>
+                </div>
             </div>
         </fieldset>
         <fieldset class="formView formViewSecondary">
-            <h3 class="formViewSecondary__title">Departamento en el que labora la mayor parte del tiempo (puede marcar más de uno) <span style="color:red">*</span></h3>
+            <h3 class="formViewSecondary__title">Departamento en el que labora la mayor parte del tiempo (puede marcar
+                más de uno) <span style="color:red">*</span></h3>
             <div>
                 <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Pre-triaje</label><br>
                 <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Triaje COVID-19</label><br>
-                <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Triaje NO COVID-19</label><br>
-                <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Emergencias COVID-19</label><br>
-                <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Emergencias NO COVID-19</label><br>
-                <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Hospitalización COVID-19</label><br>
-                <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Hospitalización NO COVID-19</label><br>
-                <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Sala de operaciones</label><br>
+                <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Triaje NO
+                    COVID-19</label><br>
+                <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Emergencias
+                    COVID-19</label><br>
+                <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Emergencias NO
+                    COVID-19</label><br>
+                <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Hospitalización
+                    COVID-19</label><br>
+                <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Hospitalización NO
+                    COVID-19</label><br>
+                <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Sala de
+                    operaciones</label><br>
                 <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Telemedicina</label><br>
                 <input type="checkbox" name="otro"><label for="cbox2">Otro:</label>
                 <input type="text"><br>
             </div>
         </fieldset>
         <fieldset class="formView formViewSecondary">
-            <h3 class="formViewSecondary__title">¿Usted ha presentado alguno de los siguientes síntomas en los últimos 15 días? Puede marcar más de una alternativa. <span style="color:red">*</span></h3>
+            <h3 class="formViewSecondary__title">¿Usted ha presentado alguno de los siguientes síntomas en los últimos
+                15 días? Puede marcar más de una alternativa. <span style="color:red">*</span></h3>
             <div>
                 <input type="checkbox" name="tos">Tos<br>
                 <input type="checkbox" name="garganta">Dolor de garganta<br>
@@ -58,7 +77,8 @@
 
         </fieldset>
         <fieldset class="formView formViewSecondary">
-            <h3 class="formViewSecondary__title">¿Ha sido diagnosticado con COVID-19? (Por prueba rápida o molecular) <span style="color: red">*</span>
+            <h3 class="formViewSecondary__title">¿Ha sido diagnosticado con COVID-19? (Por prueba rápida o molecular)
+                <span style="color: red">*</span>
             </h3>
             <div>
                 <input type="radio" name="labor" value="si">Sí<br /><br />
@@ -66,14 +86,16 @@
             </div>
         </fieldset>
         <fieldset class="formView formViewSecondary">
-            <h3 class="formViewSecondary__title">¿Ha percibido discriminación por ser personal de salud?<span style="color: red">*</span></h3>
+            <h3 class="formViewSecondary__title">¿Ha percibido discriminación por ser personal de salud?<span
+                    style="color: red">*</span></h3>
             <div>
                 <input type="radio" name="labor" value="si">Sí<br /><br />
                 <input type="radio" name="labor" value="no">No<br /><br />
             </div>
         </fieldset>
         <fieldset class="formView formViewSecondary">
-            <h3 class="formViewSecondary__title">¿Ha tomado distancia física de su familia para cuidarlos del COVID-19 <span style="color: red">*</span>
+            <h3 class="formViewSecondary__title">¿Ha tomado distancia física de su familia para cuidarlos del COVID-19
+                <span style="color: red">*</span>
             </h3>
             <div>
                 <input type="radio" name="labor" value="si">Sí<br /><br />
@@ -81,7 +103,8 @@
             </div>
         </fieldset>
         <fieldset class="formView formViewSecondary">
-            <h3 class="formViewSecondary__title">¿Algún familiar ha fallecido por COVID-19?<span style="color: red">*</h3>
+            <h3 class="formViewSecondary__title">¿Algún familiar ha fallecido por COVID-19?<span style="color: red">*
+            </h3>
             <div>
                 <input type="radio" name="labor" value="si">Sí<br /><br />
                 <input type="radio" name="labor" value="no">No<br /><br />
