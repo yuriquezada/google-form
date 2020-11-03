@@ -1,0 +1,19 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h3{
+    color: #202124;
+}
+.formViewPrincipal__title{
+    font-family: 'Product Sans Regular';
+    font-weight: 300;
+}
+
+.formViewSecondary__title{
+    font-family: 'Product Sans Light Regular';
+}
+
+input{
+    font-family: 'Roboto', sans-serif;
+}
