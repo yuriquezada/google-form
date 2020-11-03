@@ -5,12 +5,18 @@ body{
     letter-spacing: .2px;
     line-height: 20px;
     color: #202124;
+    background-color: rgb(246, 246, 246);
 }
 
+.form{
+    display: flex;
+    flex-direction: column;
+}
 .formViewPrincipal__title{
     font-family: 'Product Sans Regular';
+    font-size: 32px;
     font-weight: 300;
-    
+    margin: 12px 0 12px 0;
 }
 
 .formViewSecondary__title{
