@@ -59,7 +59,7 @@
   transition: transform 0.28s ease;
   transition: transform 0.28s ease, -webkit-transform 0.28s ease;
   border-radius: 50%;
-  border: 0.125rem solid currentColor;
+  border: 0.125rem solid rgb(95, 99, 104);
 }
 .formViewSecondary__i::after {
   -webkit-transform: scale(0);

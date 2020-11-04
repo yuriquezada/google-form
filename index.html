@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./style/style-font.css">
     <link rel="stylesheet" href="./style/style-radiobutton.css">
     <link rel="stylesheet" href="./style/style-checkbox.css">
+    <link rel="stylesheet" href="./style/style-input-text.css">
 </head>
 
 <body>
@@ -22,17 +23,48 @@
                 <h1 class="formViewPrincipal__title">Encuesta Salud Mental - PARTE 1</h1>
                 <p>A continuación usted responderá una serie de preguntas relacionadas a factores sociodemográficos,
                     laborales y relacionados a la infección por COVID-19.</p>
+                <p class="formViewPrincipal__requiredLegend">*Obligatorio</p>
             </fieldset>
-            <fieldset class="formView formViewSecondary"">
-                <h3 class=" formViewSecondary__title">Género<span style="color: red">*</span></h3>
+            <fieldset class="formView formViewSecondary">
+                <h3 class=" formViewSecondary__title">Género<span style="color: red"> *</span></h3>
                 <div class="form-radio formViewSecondary__list">
                     <label class="formViewSecondary__label">
-                        <input class="formViewSecondary__input" type="radio" name="radio" id="r1" checked="checked" /><i
-                            class="helper formViewSecondary__i"></i>Sí
+                        <input class="formViewSecondary__input" type="radio" name="radio" id="gender1" /><i
+                            class="helper formViewSecondary__i"></i>Femenino
                     </label>
                     <label class="formViewSecondary__label">
-                        <input class="formViewSecondary__input" type="radio" name="radio" id="r2" /><i
-                            class="helper formViewSecondary__i"></i>No
+                        <input class="formViewSecondary__input" type="radio" name="radio" id="gender2" /><i
+                            class="helper formViewSecondary__i"></i>Masculino
+                    </label>
+                </div>
+                <div class="groupdelosinput">      
+                    <input class="formViewSecondary__inputText" type="text" required placeholder="Tu respuesta">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                </div>
+            </fieldset>
+            <fieldset class="formView formViewSecondary">
+                <h3 class=" formViewSecondary__title">Estado civil<span style="color: red"> *</span></h3>
+                <div class="form-radio formViewSecondary__list">
+                    <label class="formViewSecondary__label">
+                        <input class="formViewSecondary__input" type="radio" name="radio" id="maritalStatus1"/><i
+                            class="helper formViewSecondary__i"></i>Soltero (a)
+                    </label>
+                    <label class="formViewSecondary__label">
+                        <input class="formViewSecondary__input" type="radio" name="radio" id="maritalStatus2" /><i
+                            class="helper formViewSecondary__i"></i>Casado (a)
+                    </label>
+                    <label class="formViewSecondary__label">
+                        <input class="formViewSecondary__input" type="radio" name="radio" id="maritalStatus1" /><i
+                            class="helper formViewSecondary__i"></i>Viudo (a)
+                    </label>
+                    <label class="formViewSecondary__label">
+                        <input class="formViewSecondary__input" type="radio" name="radio" id="maritalStatus2" /><i
+                            class="helper formViewSecondary__i"></i>Divorciado (a)
+                    </label>
+                    <label class="formViewSecondary__label">
+                        <input class="formViewSecondary__input" type="radio" name="radio" id="maritalStatus1"/><i
+                            class="helper formViewSecondary__i"></i>Conviviente
                     </label>
                 </div>
             </fieldset>
