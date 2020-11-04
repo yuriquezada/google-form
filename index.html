@@ -43,7 +43,7 @@
                 <h3 class=" formViewSecondary__title">Estado civil<span style="color: red"> *</span></h3>
                 <div class="form-radio formViewSecondary__list">
                     <label class="formViewSecondary__label">
-                        <input class="formViewSecondary__input" type="radio" name="radio" id="maritalStatus1"/><i
+                        <input class="formViewSecondary__input" type="radio" name="radio" id="maritalStatus1" /><i
                             class="helper formViewSecondary__i"></i>Soltero (a)
                     </label>
                     <label class="formViewSecondary__label">
@@ -59,14 +59,14 @@
                             class="helper formViewSecondary__i"></i>Divorciado (a)
                     </label>
                     <label class="formViewSecondary__label">
-                        <input class="formViewSecondary__input" type="radio" name="radio" id="maritalStatus1"/><i
+                        <input class="formViewSecondary__input" type="radio" name="radio" id="maritalStatus1" /><i
                             class="helper formViewSecondary__i"></i>Conviviente
                     </label>
                 </div>
             </fieldset>
             <fieldset class="formView formViewSecondary">
                 <h3 class=" formViewSecondary__title">Edad<span style="color: red"> *</span></h3>
-                <div class="groupdelosinput">      
+                <div class="formViewSecondary__groupInputText">
                     <input class="formViewSecondary__inputText" type="text" required placeholder="Tu respuesta">
                     <span class="highlight"></span>
                     <span class="bar"></span>
@@ -74,7 +74,7 @@
             </fieldset>
             <fieldset class="formView formViewSecondary">
                 <h3 class=" formViewSecondary__title">Número de hijos<span style="color: red"> *</span></h3>
-                <div class="groupdelosinput">      
+                <div class="formViewSecondary__groupInputText">
                     <input class="formViewSecondary__inputText" type="text" required placeholder="Tu respuesta">
                     <span class="highlight"></span>
                     <span class="bar"></span>
@@ -130,33 +130,153 @@
                 </select>
             </fieldset>
             <fieldset class="formView formViewSecondary">
-                <h3 class="formViewSecondary__title">Departamento en el que labora la mayor parte del tiempo (puede
-                    marcar
-                    más de uno) <span style="color:red">*</span></h3>
-                <div>
-                    <label class="pure-material-checkbox">
-                        <input type="checkbox">
-                        <span>Checkbox</span>
+                <h3 class=" formViewSecondary__title">Ocupación<span style="color: red"> *</span></h3>
+                <div class="form-radio formViewSecondary__list">
+                    <label class="formViewSecondary__label">
+                        <input class="formViewSecondary__input" type="radio" name="radio" id="gender1" /><i
+                            class="helper formViewSecondary__i"></i>Médico asistente
                     </label>
-                    <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Pre-triaje</label><br>
-                    <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Triaje
-                        COVID-19</label><br>
-                    <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Triaje NO
-                        COVID-19</label><br>
-                    <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Emergencias
-                        COVID-19</label><br>
-                    <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Emergencias NO
-                        COVID-19</label><br>
-                    <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Hospitalización
-                        COVID-19</label><br>
-                    <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Hospitalización NO
-                        COVID-19</label><br>
-                    <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Sala de
-                        operaciones</label><br>
-                    <input type="checkbox" id="cbox1" value="second_checkbox"><label
-                        for="cbox2">Telemedicina</label><br>
-                    <input type="checkbox" name="otro"><label for="cbox2">Otro:</label>
-                    <input type="text"><br>
+                    <label class="formViewSecondary__label">
+                        <input class="formViewSecondary__input" type="radio" name="radio" id="gender2" /><i
+                            class="helper formViewSecondary__i"></i>Médico residente
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset class="formView formViewSecondary">
+                <h3 class=" formViewSecondary__title">¿Qué tan frecuentemente tiene contacto con pacientes con COVID-19?<span style="color: red"> *</span></h3>
+                <div class="form-radio formViewSecondary__list">
+                    <label class="formViewSecondary__label">
+                        <input class="formViewSecondary__input" type="radio" name="radio" id="gender1" /><i
+                            class="helper formViewSecondary__i"></i>Todos los días
+                    </label>
+                    <label class="formViewSecondary__label">
+                        <input class="formViewSecondary__input" type="radio" name="radio" id="gender2" /><i
+                            class="helper formViewSecondary__i"></i>4-6 días de la semana
+                    </label>
+                    <label class="formViewSecondary__label">
+                        <input class="formViewSecondary__input" type="radio" name="radio" id="gender2" /><i
+                            class="helper formViewSecondary__i"></i>1-3 días de la semana
+                    </label>
+                    <label class="formViewSecondary__label">
+                        <input class="formViewSecondary__input" type="radio" name="radio" id="gender2" /><i
+                            class="helper formViewSecondary__i"></i>Nunca
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset class="formView formViewSecondary">
+                <h3 class="formViewSecondary__title">¿Cuál es su especialidad?<span style="color: red"> *</span></h3>
+                <select class="quantumWizMenuPaperselectOption">
+                    <option>Elige</option>
+                    <option>Alergología</option>
+                    <option>Cardiología</option>
+                    <option>Cirugía de Cabeza y Cuello</option>
+                    <option>Cirugía de Torax y Cardiovascular</option>
+                    <option>Cirugía General y Laparoscópica</option>
+                    <option>Cirugía Oncológica</option>
+                    <option>Cirugía Pediátrica</option>
+                    <option>Dermatología</option>
+                    <option>Endocrinología</option>
+                    <option>Gastroenterología</option>
+                    <option>Geriatría</option>
+                    <option>Ginecología y Obstetricia</option>
+                    <option>Hematología</option>
+                    <option>Mastología</option>
+                    <option>Medicina Física y Rehabilitación</option>
+                    <option>Medicina General</option>
+                    <option>Medicina Interna</option>
+                    <option>Neumología</option>
+                    <option>Neurocirugía</option>
+                    <option>Neurología</option>
+                    <option>Nutrición</option>
+                    <option>Oftalmología</option>
+                    <option>Otorrinolaringología</option>
+                    <option>Pediatría</option>
+                    <option>Psicología</option>
+                    <option>Reumatologia</option>
+                    <option>Salud Mental</option>
+                    <option>Radiología</option>
+                    <option>Traumatologia y Ortopedia</option>
+                    <option>Urología</option>
+                    <option>Odontología Integral</option>
+                    <option>Ecografía</option>
+                    <option>Nefrología</option>
+                    <option>Ginecología Oncológica</option>
+                    <option>Odontología. Periodoncia e Implantología</option>
+                    <option>Odontología Infantil u Odontopediatría</option>
+                    <option>Odontología. Cirugía Maxilo Facial</option>
+                    <option>Odontología. Rehabilitación Oral</option>
+                    <option>Odontología. Ortodoncia y Ortopedia</option>
+                    <option>Odontología. Endodoncia</option>
+                </select>
+            </fieldset>
+            <fieldset class="formView formViewSecondary">
+                <h3 class="formViewSecondary__title">¿En qué sede hospital labora?<span style="color: red"> *</span></h3>
+                <select class="quantumWizMenuPaperselectOption">
+					<option>Elige</option>
+					<option>Hospital Cayetano Heredia (HCH)</option>
+					<option>Hospital Nacional Arzobispo Loayza (HNAL)</option>
+					<option>Instituto Nacional de Salud Mental "Honorio Delgado- Hideyo Noguchi" (INSM)</option>
+					<option>Instituto Nacional de Salud del Niño</option>
+					<option>Hospital Nacional Edgardo Rebagliati Martins</option>
+					<option>Instituto Nacional Materno Perinatal de Lima</option>
+					<option>Instituto Nacional Cardiovascular (INCOR)</option>
+					<option>Centro de Salud/Posta de Salud</option>
+                </select>
+            </fieldset>
+            <fieldset class="formView formViewSecondary">
+                <h3 class="formViewSecondary__title">Departamento en el que labora la mayor parte del tiempo (puede marcar más de uno) <span style="color:red">*</span></h3>
+                <div class="formViewSecondary__list">
+                    <label class="formViewSecondary__label">
+                        <input class="formViewSecondary__inputCheckbox" type="checkbox">
+                        <span class="formViewSecondary__iCheckbox">Pre-triaje</span>
+                    </label>
+                    <label class="formViewSecondary__label">
+                        <input class="formViewSecondary__inputCheckbox" type="checkbox">
+                        <span class="formViewSecondary__iCheckbox">Triaje COVID-19</span>
+                    </label>
+                    <label class="formViewSecondary__label">
+                        <input class="formViewSecondary__inputCheckbox" type="checkbox">
+                        <span class="formViewSecondary__iCheckbox">Triaje NO COVID-19</span>
+                    </label>
+                    <label class="formViewSecondary__label">
+                        <input class="formViewSecondary__inputCheckbox" type="checkbox">
+                        <span class="formViewSecondary__iCheckbox">Emergencias COVID-19</span>
+                    </label>
+                    <label class="formViewSecondary__label">
+                        <input class="formViewSecondary__inputCheckbox" type="checkbox">
+                        <span class="formViewSecondary__iCheckbox">Emergencias NO COVID-19</span>
+                    </label>
+                    <label class="formViewSecondary__label">
+                        <input class="formViewSecondary__inputCheckbox" type="checkbox">
+                        <span class="formViewSecondary__iCheckbox">Hospitalización COVID-19</span>
+                    </label>
+                    <label class="formViewSecondary__label">
+                        <input class="formViewSecondary__inputCheckbox" type="checkbox">
+                        <span class="formViewSecondary__iCheckbox">Hospitalización NO COVID-19</span>
+                    </label>
+                    <label class="formViewSecondary__label">
+                        <input class="formViewSecondary__inputCheckbox" type="checkbox">
+                        <span class="formViewSecondary__iCheckbox">Radiología</span>
+                    </label> 
+                    <label class="formViewSecondary__label">
+                        <input class="formViewSecondary__inputCheckbox" type="checkbox">
+                        <span class="formViewSecondary__iCheckbox">Sala de operaciones</span>
+                    </label>
+                    <label class="formViewSecondary__label">
+                        <input class="formViewSecondary__inputCheckbox" type="checkbox">
+                        <span class="formViewSecondary__iCheckbox">Telemedicina</span>
+                    </label>
+                    <div class="formViewSecondary__inputCheckboxInputText">
+                        <label class="formViewSecondary__label">
+                            <input class="formViewSecondary__inputCheckbox" type="checkbox">
+                            <span class="formViewSecondary__iCheckbox">Otro:</span>
+                        </label>
+                        <div class="formViewSecondary__groupInputText">
+                            <input class="formViewSecondary__inputText" type="text" required placeholder="Tu respuesta">
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
                 </div>
             </fieldset>
             <fieldset class="formView formViewSecondary">

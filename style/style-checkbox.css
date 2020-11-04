@@ -1,15 +1,18 @@
-.pure-material-checkbox {
+.formViewSecondary__groupInputText{
+    
+}
+.formViewSecondary__inputCheckboxInputText{
+    display: flex;
+}
+.formViewSecondary__label {
     z-index: 0;
     position: relative;
-    display: inline-block;
-    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.87);
-    font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
-    font-size: 16px;
-    line-height: 1.5;
+    /* display: flex;
+    align-items: center; */
 }
 
 /* Input */
-.pure-material-checkbox > input {
+.formViewSecondary__inputCheckbox {
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -31,19 +34,23 @@
     transition: opacity 0.3s, transform 0.2s;
 }
 
-/* Span */
-.pure-material-checkbox > span {
-    display: inline-block;
-    width: 100%;
+/* .formViewSecondary__iCheckbox */
+.formViewSecondary__iCheckbox {
+    /* width: 100%; */
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
 }
 
 /* Box */
-.pure-material-checkbox > span::before {
+.formViewSecondary__iCheckbox::before {
     content: "";
     display: inline-block;
+    position: absolute;
+    left: 1px;
     box-sizing: border-box;
-    margin: 3px 11px 3px 1px;
+    margin: 0px 11px 0px 1px;
     border: solid 2px; /* Safari */
     border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
     border-radius: 2px;
@@ -54,11 +61,11 @@
 }
 
 /* Checkmark */
-.pure-material-checkbox > span::after {
+.formViewSecondary__iCheckbox::after {
     content: "";
     display: block;
     position: absolute;
-    top: 3px;
+    top: 1px;
     left: 1px;
     width: 10px;
     height: 5px;
@@ -69,72 +76,72 @@
 }
 
 /* Checked, Indeterminate */
-.pure-material-checkbox > input:checked,
-.pure-material-checkbox > input:indeterminate {
-    background-color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+.formViewSecondary__inputCheckbox:checked,
+.formViewSecondary__inputCheckbox:indeterminate {
+    background-color: rgb(var(--pure-material-primary-rgb, 63, 81, 181));
 }
 
-.pure-material-checkbox > input:checked + span::before,
-.pure-material-checkbox > input:indeterminate + span::before {
-    border-color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
-    background-color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+.formViewSecondary__inputCheckbox:checked + .formViewSecondary__iCheckbox::before,
+.formViewSecondary__inputCheckbox:indeterminate + .formViewSecondary__iCheckbox::before {
+    border-color: rgb(var(--pure-material-primary-rgb, 63, 81, 181));
+    background-color: rgb(var(--pure-material-primary-rgb, 63, 81, 181));
 }
 
-.pure-material-checkbox > input:checked + span::after,
-.pure-material-checkbox > input:indeterminate + span::after {
+.formViewSecondary__inputCheckbox:checked + .formViewSecondary__iCheckbox::after,
+.formViewSecondary__inputCheckbox:indeterminate + .formViewSecondary__iCheckbox::after {
     border-color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
 }
 
-.pure-material-checkbox > input:indeterminate + span::after {
+.formViewSecondary__inputCheckbox:indeterminate + .formViewSecondary__iCheckbox::after {
     border-left: none;
     transform: translate(4px, 3px);
 }
 
 /* Hover, Focus */
-.pure-material-checkbox:hover > input {
+.formViewSecondary__inputCheckbox {
     opacity: 0.04;
 }
 
-.pure-material-checkbox > input:focus {
+.formViewSecondary__inputCheckbox:focus {
     opacity: 0.12;
 }
 
-.pure-material-checkbox:hover > input:focus {
+.formViewSecondary__inputCheckbox:focus {
     opacity: 0.16;
 }
 
 /* Active */
-.pure-material-checkbox > input:active {
+.formViewSecondary__inputCheckbox:active {
     opacity: 1;
     transform: scale(0);
     transition: transform 0s, opacity 0s;
 }
 
-.pure-material-checkbox > input:active + span::before {
-    border-color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));
+.formViewSecondary__inputCheckbox:active + .formViewSecondary__iCheckbox::before {
+    border-color: rgb(var(--pure-material-primary-rgb, 63, 81, 181));
 }
 
-.pure-material-checkbox > input:checked:active + span::before {
+.formViewSecondary__inputCheckbox:checked:active + .formViewSecondary__iCheckbox::before {
     border-color: transparent;
     background-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
 }
 
 /* Disabled */
-.pure-material-checkbox > input:disabled {
+.formViewSecondary__inputCheckbox:disabled {
     opacity: 0;
 }
 
-.pure-material-checkbox > input:disabled + span {
+.formViewSecondary__inputCheckbox:disabled + .formViewSecondary__iCheckbox {
     color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);
     cursor: initial;
 }
 
-.pure-material-checkbox > input:disabled + span::before {
+.formViewSecondary__inputCheckbox:disabled + .formViewSecondary__iCheckbox::before {
     border-color: rgb(95, 99, 104);
 }
 
-.pure-material-checkbox > input:checked:disabled + span::before,
-.pure-material-checkbox > input:indeterminate:disabled + span::before {
+.formViewSecondary__inputCheckbox:checked:disabled + .formViewSecondary__iCheckbox::before,
+.formViewSecondary__inputCheckbox:indeterminate:disabled + .formViewSecondary__iCheckbox::before {
     border-color: transparent;
     background-color:rgb(95, 99, 104);
 }
