@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./style/style-google-font.css">
     <link rel="stylesheet" href="./style/style-font.css">
     <link rel="stylesheet" href="./style/style-radiobutton.css">
+    <link rel="stylesheet" href="./style/style-checkbox.css">
 </head>
 
 <body>
@@ -23,26 +24,30 @@
                     laborales y relacionados a la infección por COVID-19.</p>
             </fieldset>
             <fieldset class="formView formViewSecondary"">
-                <h3 class="formViewSecondary__title">Género<span style="color: red">*</span></h3>
+                <h3 class=" formViewSecondary__title">Género<span style="color: red">*</span></h3>
                 <div class="form-radio formViewSecondary__list">
-                    <div class="radio form-radio formViewSecondary__item">
-                      <label class="formViewSecondary__label">
-                        <input class="formViewSecondary__input" type="radio" name="radio" id="r1" checked="checked"/><i class="helper formViewSecondary__i"></i>Sí
-                      </label>
-                    </div>
-                    <div class="radio form-radio formViewSecondary__item">
-                      <label class="formViewSecondary__label">
-                        <input class="formViewSecondary__input" type="radio" name="radio" id="r2"/><i class="helper formViewSecondary__i"></i>No
-                      </label>
-                    </div>
+                    <label class="formViewSecondary__label">
+                        <input class="formViewSecondary__input" type="radio" name="radio" id="r1" checked="checked" /><i
+                            class="helper formViewSecondary__i"></i>Sí
+                    </label>
+                    <label class="formViewSecondary__label">
+                        <input class="formViewSecondary__input" type="radio" name="radio" id="r2" /><i
+                            class="helper formViewSecondary__i"></i>No
+                    </label>
                 </div>
             </fieldset>
             <fieldset class="formView formViewSecondary">
-                <h3 class="formViewSecondary__title">Departamento en el que labora la mayor parte del tiempo (puede marcar
+                <h3 class="formViewSecondary__title">Departamento en el que labora la mayor parte del tiempo (puede
+                    marcar
                     más de uno) <span style="color:red">*</span></h3>
                 <div>
+                    <label class="pure-material-checkbox">
+                        <input type="checkbox">
+                        <span>Checkbox</span>
+                    </label>
                     <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Pre-triaje</label><br>
-                    <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Triaje COVID-19</label><br>
+                    <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Triaje
+                        COVID-19</label><br>
                     <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Triaje NO
                         COVID-19</label><br>
                     <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Emergencias
@@ -55,13 +60,15 @@
                         COVID-19</label><br>
                     <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Sala de
                         operaciones</label><br>
-                    <input type="checkbox" id="cbox1" value="second_checkbox"><label for="cbox2">Telemedicina</label><br>
+                    <input type="checkbox" id="cbox1" value="second_checkbox"><label
+                        for="cbox2">Telemedicina</label><br>
                     <input type="checkbox" name="otro"><label for="cbox2">Otro:</label>
                     <input type="text"><br>
                 </div>
             </fieldset>
             <fieldset class="formView formViewSecondary">
-                <h3 class="formViewSecondary__title">¿Usted ha presentado alguno de los siguientes síntomas en los últimos
+                <h3 class="formViewSecondary__title">¿Usted ha presentado alguno de los siguientes síntomas en los
+                    últimos
                     15 días? Puede marcar más de una alternativa. <span style="color:red">*</span></h3>
                 <div>
                     <input type="checkbox" name="tos">Tos<br>
@@ -75,10 +82,11 @@
                     <input type="checkbox" name="mialgas">Mialgas<br>
                     <input type="checkbox" name="otro">Otro: <input type="text" />
                 </div>
-    
+
             </fieldset>
             <fieldset class="formView formViewSecondary">
-                <h3 class="formViewSecondary__title">¿Ha sido diagnosticado con COVID-19? (Por prueba rápida o molecular)
+                <h3 class="formViewSecondary__title">¿Ha sido diagnosticado con COVID-19? (Por prueba rápida o
+                    molecular)
                     <span style="color: red">*</span>
                 </h3>
                 <div>
@@ -95,7 +103,8 @@
                 </div>
             </fieldset>
             <fieldset class="formView formViewSecondary">
-                <h3 class="formViewSecondary__title">¿Ha tomado distancia física de su familia para cuidarlos del COVID-19
+                <h3 class="formViewSecondary__title">¿Ha tomado distancia física de su familia para cuidarlos del
+                    COVID-19
                     <span style="color: red">*</span>
                 </h3>
                 <div>
@@ -104,7 +113,8 @@
                 </div>
             </fieldset>
             <fieldset class="formView formViewSecondary">
-                <h3 class="formViewSecondary__title">¿Algún familiar ha fallecido por COVID-19?<span style="color: red">*
+                <h3 class="formViewSecondary__title">¿Algún familiar ha fallecido por COVID-19?<span
+                        style="color: red">*
                 </h3>
                 <div>
                     <input type="radio" name="labor" value="si">Sí<br /><br />

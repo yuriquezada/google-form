@@ -13,10 +13,10 @@ body{
     flex-direction: column;
 }
 .formViewPrincipal__title{
-    font-family: 'Product Sans Regular';
     font-size: 32px;
-    font-weight: 300;
     margin: 12px 0 12px 0;
+    font-family:'Product Sans Light Regular';
+    font-weight:normal
 }
 
 .formViewSecondary__title{
