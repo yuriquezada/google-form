@@ -1,18 +1,13 @@
-.formViewSecondary__groupInputText{
-    
-}
 .formViewSecondary__inputCheckboxInputText{
     display: flex;
 }
 .formViewSecondary__label {
     z-index: 0;
     position: relative;
-    /* display: flex;
-    align-items: center; */
 }
 
 /* Input */
-.formViewSecondary__inputCheckbox {
+.formViewSecondary__inputCheckbox{
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -25,13 +20,17 @@
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    background-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+    background-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0);
     box-shadow: none;
     outline: none;
     opacity: 0;
     transform: scale(1);
     pointer-events: none;
     transition: opacity 0.3s, transform 0.2s;
+}
+
+.formViewSecondary__inputCheckbox:hover{
+    background-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
 }
 
 /* .formViewSecondary__iCheckbox */
@@ -49,13 +48,14 @@
     display: inline-block;
     position: absolute;
     left: 1px;
+    background-color: #fff;
     box-sizing: border-box;
     margin: 0px 11px 0px 1px;
     border: solid 2px; /* Safari */
     border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
     border-radius: 2px;
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     vertical-align: top;
     transition: border-color 0.2s, background-color 0.2s;
 }
@@ -66,7 +66,7 @@
     display: block;
     position: absolute;
     top: 1px;
-    left: 1px;
+    left: 2px;
     width: 10px;
     height: 5px;
     border: solid 2px transparent;
@@ -104,10 +104,6 @@
 
 .formViewSecondary__inputCheckbox:focus {
     opacity: 0.12;
-}
-
-.formViewSecondary__inputCheckbox:focus {
-    opacity: 0.16;
 }
 
 /* Active */
