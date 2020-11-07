@@ -10,7 +10,7 @@
   display:block;
   width:128px;
   border:none;
-  border-bottom:1px solid #757575;
+  border-bottom:1px solid rgba(0,0,0,0.12);
 }
 .formViewSecondary__inputText:focus 		{ outline:none; }
 

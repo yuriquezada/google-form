@@ -136,3 +136,20 @@
     border-color: transparent;
     background-color:rgb(95, 99, 104);
 }
+
+
+.formViewSecondary__groupInputText{
+    flex-grow: 1;
+}
+
+.formViewSecondary__inputText{
+    width: 100%;
+}
+
+.formViewSecondary__inputCheckboxInputText .bar {
+    width: 100%;
+}
+
+.formViewSecondary__inputCheckboxInputText .formViewSecondary__inputText{
+    width: 100%;
+}
